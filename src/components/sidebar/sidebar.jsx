@@ -1,8 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-=======
 import {NavLink} from "react-router-dom"
->>>>>>> 766a8814ae70fa3e2cc514852f3d4240eff6cc9c
 
 function SideBar() {
   return (
