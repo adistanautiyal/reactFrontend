@@ -1,11 +1,15 @@
 import React from "react";
+<<<<<<< HEAD
+=======
+import {NavLink} from "react-router-dom"
+>>>>>>> 766a8814ae70fa3e2cc514852f3d4240eff6cc9c
 
 function SideBar() {
   return (
     <>
-      <div className="h-screen w-full bg-white relative flex overflow-hidden">
         <aside className="h-full w-16 flex flex-col space-y-10 items-center justify-center relative bg-gray-800 text-white">
-          <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white  hover:duration-300 hover:ease-linear focus:bg-white">
+          <NavLink className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white  hover:duration-300 hover:ease-linear focus:bg-white">
+            
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -18,7 +22,7 @@ function SideBar() {
                 clipRule="evenodd"
               />
             </svg>
-          </div>
+          </NavLink>
 
           <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white  hover:duration-300 hover:ease-linear focus:bg-white">
             <svg
@@ -54,7 +58,6 @@ function SideBar() {
             </svg>
           </div>    
         </aside>
-      </div>
     </>
   );
 }

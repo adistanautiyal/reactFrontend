@@ -1,20 +1,14 @@
-import { useState, useEffect } from "react";
-import "./App.css";
 import SideBar from "./components/sidebar/sidebar.jsx";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-  
-  useEffect(() => {
-    let timer = setTimeout(() => {
-    setCount((count) => count + 1);
-  }, 1000);
-  }, []);
-
   return (
   <>
+  
+  <div className="h-screen w-full bg-white relative flex overflow-hidden">
   <SideBar/>
-  <h1>I've rendered {count} times!</h1>
+  <Outlet/>  
+  </div>
   </>
 )
 }
